@@ -1,0 +1,18 @@
+<div>
+    <ul>
+      <li> 
+      <span (click)="toggle()" ><i class="fa fa-minus-square-o" aria-hidden="true" [hidden]="!flag"></i>
+      <i class="fa fa-plus-square-o" aria-hidden="true" [hidden]="flag"></i></span> &nbsp;
+      <span [hidden]="flag"><i class="fa fa-folder-o" aria-hidden="true"></i></span>
+      <span [hidden]="!flag"><i class="fa fa-folder-open-o" aria-hidden="true"></i> </span>&nbsp; NT
+    <ul *ngIf="flag" class="listType">
+      <li>Vegatabele Without sauce, including cream Style corn and stewed tomatoes</li>
+      <li>Vegatabele with sauce</li>
+      <li>Vegatabele primiarily used for garnish or flavouring, fresh, canned or frozen but not dried</li>
+      <li>Seaweed</li>
+      <li>Lettuce and sprouts</li>
+      <li>Vegatabele Juice and Vegatabele drink</li>
+    </ul>
+    </li>
+    </ul>
+    </div>

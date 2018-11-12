@@ -1,0 +1,13 @@
+<div>
+    <ul>
+      <li> 
+      <span (click)="toggle()" ><i class="fa fa-minus-square-o" aria-hidden="true" [hidden]="!flag"></i>
+      <i class="fa fa-plus-square-o" aria-hidden="true" [hidden]="flag"></i></span> &nbsp;
+      <span [hidden]="flag"><i class="fa fa-folder-o" aria-hidden="true"></i></span>
+      <span [hidden]="!flag"><i class="fa fa-folder-open-o" aria-hidden="true"></i> </span>&nbsp; USE
+    <ul *ngIf="flag">
+      <li>USE works</li>
+    </ul>
+    </li>
+    </ul>
+    </div>
